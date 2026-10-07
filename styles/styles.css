@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --donker: #202d43;
   --lijn: #cdd1c7;
   --accent: #9d4929;
@@ -292,4 +292,102 @@ h3 {
   grid-column: 1 / -1;
   text-align: center;
   font-size: 12px;
+}
+/* Tablet */
+@media (max-width: 900px) {
+    html { scroll-padding-top: 210px; }
+.bovenbalk { flex-direction: column; align-items: flex-start; gap: 20px; }
+.menu { gap: 18px; }
+.intro { gap: 35px; padding-block: 65px; }
+.collectie-raster { gap: 24px; }
+.iconen-voorbeeld { padding: 24px; gap: 12px; }
+}
+
+@media (max-width: 750px) {
+    .gebruik { padding: 24px; }
+.gebruik-raster { grid-template-columns: 1fr; }
+}
+
+/* Mobiel */
+@media (max-width: 650px) {
+    html { scroll-padding-top: 120px; }
+.paginabreedte { width: 90%; }
+
+    /* Navigatie met hamburgermenu */
+    .bovenbalk {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        padding-block: 18px;
+    }
+.logo { width: 160px; }
+    .hamburger:not([hidden]) {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border: 1px solid var(--donker);
+        border-radius: 5px;
+        background: transparent;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+.menu.menu-interactief { display: none; }
+.menu.is-open { display: flex; }
+.menu a { padding: 12px; font-size: 1rem; }
+/* Intro */ .intro { grid-template-columns: 1fr; padding-block: 36px 16px; gap: 16px; }
+.intro>.knop { display: none; }
+    .intro-beeld {
+        grid-area: auto;
+        grid-template-columns: minmax(0, 1fr);
+        display: grid;
+        aspect-ratio: auto;
+        margin-top: 25px;
+        padding: 20px;
+        gap: 18px;
+        border: 1px solid var(--lijn);
+    }
+.voorbeeld-kop { display: block; }
+.iconen-raster { width: 100%; margin: 0; }
+    .iconen-bekijk {
+        justify-self: end;
+        max-width: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+/* Collectie */ .collecties { padding-block: 40px; }
+.collectie-raster { grid-template-columns: 1fr; }
+#illustraties { order: -1; }
+.kaart-beeld { height: 230px; }
+.kaart-tekst { padding: 22px; }
+.kaart-tekst p { margin-bottom: 0; }
+/* Gebruik en footer */ .gebruik { margin-bottom: 36px; }
+.gebruik>h2 { text-align: center; }
+.gebruik-raster article { align-items: center; text-align: center; }
+.onderbalk { grid-template-columns: 1fr; gap: 28px; }
+
+    /* Knop om terug naar boven te gaan */
+    .terug-boven {
+        display: grid;
+        place-items: center;
+        position: fixed;
+        right: 12px;
+        bottom: 20px;
+        z-index: 5;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--donker);
+        border-radius: 50%;
+        background: #faf9f5;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
 }
