@@ -5,6 +5,8 @@
   --tekst: light-dark(#000, #fff);
   --achtergrond: light-dark(#fff, #17191d);
   --vlak: light-dark(#faf9f5, #22252b);
+  --sectie: light-dark(#e9ede3, #292f38);
+  --illustratievlak: light-dark(#e7eadf, #303741);
   --donker: #202d43;
   --lijn: #cdd1c7;
   --accent: #9d4929;
@@ -152,7 +154,7 @@ h3 {
   justify-content: center;
   width: 100%;
   aspect-ratio: 1;
-  background: #e7eadf;
+  background: var(--illustratievlak);
   border-radius: 16px;
 }
 .voorbeeld-kop {
@@ -230,7 +232,7 @@ h3 {
 .kaart-beeld {
   margin: 0;
   height: 265px;
-  background: #eee8dc;
+  background: var(--sectie);
 }
 .kaart-beeld > img {
   width: 100%;
@@ -246,7 +248,7 @@ h3 {
   align-items: center;
   gap: 22px;
   padding: 38px;
-  background: #e2e9df;
+  background: var(--sectie);
 }
 .iconen-voorbeeld img {
   aspect-ratio: 1;
@@ -404,4 +406,5 @@ h3 {
     filter: brightness(0) invert(1);
   }
 }
+
 
