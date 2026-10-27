@@ -1,4 +1,10 @@
+
+
 :root {
+  color-scheme: light dark;
+  --tekst: light-dark(#000, #fff);
+  --achtergrond: light-dark(#fff, #17191d);
+  --vlak: light-dark(#faf9f5, #22252b);
   --donker: #202d43;
   --lijn: #cdd1c7;
   --accent: #9d4929;
@@ -11,8 +17,8 @@ html {
 }
 body {
   margin: 0;
-  background: #faf9f5;
-  color: var(--donker);
+  background: var(--achtergrond);
+  color: var(--tekst);
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
@@ -100,7 +106,7 @@ h3 {
   gap: 32px;
   padding-block: 28px;
   border-bottom: 1px solid var(--lijn);
-  background: #faf9f5;
+  background: var(--achtergrond);
 }
 .logo {
   width: 185px;
@@ -218,7 +224,7 @@ h3 {
 .collectie-kaart {
   display: block;
   overflow: hidden;
-  background: white;
+  background: var(--vlak);
   text-decoration: none;
 }
 .kaart-beeld {
@@ -250,7 +256,7 @@ h3 {
 .gebruik {
   padding: 36px;
   margin-bottom: 60px;
-  background: #e9ede3;
+  background: var(--vlak);
 }
 .gebruik > h2 {
   margin-bottom: 32px;
@@ -386,8 +392,9 @@ h3 {
         height: 44px;
         border: 1px solid var(--donker);
         border-radius: 50%;
-        background: #faf9f5;
+        background: var(--vlak);
         font-size: 1.6rem;
         text-decoration: none;
     }
 }
+
