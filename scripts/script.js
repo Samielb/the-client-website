@@ -20,3 +20,9 @@ function toggleMenu() {
   deButton.setAttribute("aria-label", isOpen ? "Menu sluiten" : "Menu openen");
 }
 
+// Schakel tussen lightmode en darkmode.
+var themeToggle = document.querySelector("#theme-toggle");
+themeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("darkmode");
+});
+
