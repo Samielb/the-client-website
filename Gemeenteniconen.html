@@ -16,13 +16,16 @@
     </a>
 
     <button class="hamburger" type="button" title="Menu" hidden>☰</button>
-    <nav class="menu rij" id="hoofdmenu">
-        <a href="#boven">Home</a>
-        <a href="#iconen">Iconen</a>
-        <a href="#illustraties">Illustraties</a>
-        <a href="#credits">Credits</a>
-        <a class="knop" href="#gebruik">Doe mee</a>
-    </nav>
+    <div class="header-acties rij">
+        <nav class="menu rij" id="hoofdmenu">
+            <a href="#boven"><img src="assets/Svg/Line/Huis.svg" alt=""> Home</a>
+            <a href="iconen.html"><img src="assets/Svg/Line/Documenten.svg" alt=""> Iconen</a>
+            <a href="#illustraties"><img src="assets/Svg/Line/Bomen.svg" alt=""> Illustraties</a>
+            <a href="#credits"><img src="assets/Svg/Line/Bericht.svg" alt=""> Credits</a>
+            <a class="knop" href="#gebruik"><img src="assets/Svg/Line/Gebruiker.svg" alt=""> Doe mee</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button"><span class="theme-toggle-light">☀️ Light</span><span class="theme-toggle-dark">🌙 Dark</span></button>
+    </div>
 </header>
 
 <main>
@@ -31,7 +34,7 @@
         <h1>Open Rechtenvrij</h1>
         <p class="intro-uitleg">Maak ingewikkelde informatie eenvoudig.<br>Gebruik de iconen en maak het makkelijke.</p>  
 
-        <a class="knop" href="#illustraties">Bekijk de illustraties</a>
+        <a class="knop" href="#illustraties"><img src="assets/Svg/Line/Bomen.svg" alt=""> Bekijk de illustraties</a>
         <img src="assets/spullenedit.png" alt="spullenedit">
          
         <section class="intro-beeld kolom">
@@ -55,7 +58,7 @@
         <h2>Iconen en illustraties</h2>
 
         <section class="collectie-raster raster">
-            <a class="collectie-kaart paneel" id="iconen" href="#gebruik">
+            <a class="collectie-kaart paneel" id="iconen" href="iconen.html">
                 <span class="kaart-beeld iconen-voorbeeld">
                     <img src="assets/icoon-huis.svg" alt="Huis">
                     <img src="assets/icoon-bomen.svg" alt="Bomen">
@@ -69,14 +72,14 @@
                 </article>
             </a>
 
-            <a class="" id="iconen" href="#gebruik">
-                 <span class="kaart-img iconen-voorbeeld">
-                   <img src="assets/illustraties.jpg" alt="Huis">
+            <a class="collectie-kaart paneel" id="illustraties" href="#gebruik">
+                 <span class="kaart-beeld illustratie-voorbeeld">
+                   <img src="assets/illustraties.jpg" alt="Voorbeeld van rechtenvrije illustraties">
                  </span>
 
                  <article class="kaart-tekst">
                     <h3>Rechtenvrije illustraties</h3>
-                    <p>bekijke de Rechtenvrije illustraties</p>
+                    <p>Bekijk de rechtenvrije illustraties.</p>
                  </article>
              </a>
         </section>
@@ -89,19 +92,19 @@
             <article class="kolom">
                 <h3>Direct uit GitHub</h3>
                 <p>Vind de iconen in de repository en gebruik de bestanden in je eigen website.</p>
-                <a class="knop" href="https://github.com/OpenGemeenten/Iconenset/">Bekijk GitHub</a>
+                <a class="knop" href="https://github.com/OpenGemeenten/Iconenset/"><img src="assets/Svg/Line/Documenten.svg" alt=""> Bekijk GitHub</a>
             </article>
 
             <article class="kolom">
                 <h3>Via webcomponenten</h3>
                 <p>Voeg iconen toe aan je project met de webcomponenten van Frameless.</p>
-                <a class="knop" href="https://frameless.github.io/iconset-npm/">Bekijk documentatie</a>
+                <a class="knop" href="https://frameless.github.io/iconset-npm/"><img src="assets/Svg/Line/Documenten.svg" alt=""> Bekijk documentatie</a>
             </article>
 
             <article class="kolom">
                 <h3>Als SVG-download</h3>
                 <p>Haal de hele iconenset als ZIP binnen en kies de SVG-bestanden die je nodig hebt.</p>
-                <a class="knop" href="https://github.com/OpenGemeenten/Iconenset/archive/refs/heads/master.zip">Download de iconen</a>
+                <a class="knop" href="https://github.com/OpenGemeenten/Iconenset/archive/refs/heads/master.zip"><img src="assets/Svg/Line/Documenten.svg" alt=""> Download de iconen</a>
             </article>
         </section>
     </section>
