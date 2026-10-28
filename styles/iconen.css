@@ -1,0 +1,52 @@
+/* Stijlen die alleen voor iconen.html gelden */
+.iconenpagina { padding-block: 56px 80px; }
+.iconen-intro { max-width: 720px; margin-bottom: 36px; }
+.iconen-intro p { font-size: 1.1rem; }
+.icon-keuze-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 14px; }
+.icon-keuze {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  min-height: 132px;
+  padding: 18px 12px;
+  border: 1px solid var(--lijn);
+  border-radius: 8px;
+  background: var(--vlak);
+  color: var(--tekst);
+  font: inherit;
+  cursor: pointer;
+}
+.icon-keuze:hover { border-color: var(--accent); }
+.icon-keuze img { width: 52px; height: 52px; object-fit: contain; }
+body.darkmode .icon-keuze img { filter: invert(1); }
+.icon-keuze span { overflow-wrap: anywhere; text-align: center; }
+.icon-dialog {
+  width: min(680px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  padding: 28px;
+  border: 1px solid var(--lijn);
+  border-radius: 12px;
+  background: var(--vlak);
+  color: var(--tekst);
+}
+.icon-dialog::backdrop { background: rgb(0 0 0 / 60%); }
+.icon-dialog-kop { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.icon-dialog-kop h2 { margin: 4px 0 20px; }
+.dialog-sluiten { border: 0; background: transparent; color: var(--tekst); font-size: 2rem; cursor: pointer; }
+.variant-keuze { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.variant-knop { padding: 8px 12px; border: 1px solid var(--lijn); border-radius: 5px; background: transparent; color: var(--tekst); font: inherit; cursor: pointer; }
+.variant-knop.is-active { border-color: var(--donker); background: var(--donker); color: #fff; }
+.icon-preview { display: grid; place-items: center; min-height: 170px; margin-bottom: 18px; border-radius: 8px; background: var(--sectie); }
+.icon-preview img { width: 96px; height: 96px; object-fit: contain; }
+body.darkmode .icon-preview img { filter: invert(1); }
+.svg-code-label { display: block; margin-bottom: 6px; font-weight: bold; }
+.svg-code { width: 100%; padding: 12px; border: 1px solid var(--lijn); border-radius: 5px; background: var(--achtergrond); color: var(--tekst); font: .8rem/1.5 Consolas, monospace; resize: vertical; }
+.icon-feedback { min-height: 1.5em; margin: 8px 0; font-size: .9rem; }
+.icon-acties { display: flex; flex-wrap: wrap; gap: 10px; }
+.download-knop { border: 0; cursor: pointer; }
+
+@media (max-width: 650px) {
+  .iconenpagina { padding-block: 36px 56px; }
+  .icon-dialog { padding: 20px; }
+  .variant-knop { font-size: .9rem; }
+}

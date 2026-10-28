@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bekijk, kopieer en download de SVG-iconen van Gemeenteniconen.">
+    <title>Iconen downloaden | Gemeenteniconen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/iconen.css">
+</head>
+<body id="boven">
+    <header class="bovenbalk paginabreedte rij">
+        <a href="Gemeenteniconen.html#boven">
+            <img class="logo" src="assets/gemeenteniconen-logo.svg" alt="Gemeenteniconen">
+        </a>
+        <button class="hamburger" type="button" title="Menu" hidden>☰</button>
+
+        <div class="header-acties rij">
+            <nav class="menu rij" id="hoofdmenu">
+                <a href="Gemeenteniconen.html#boven">Home</a>
+                <a href="iconen.html">Iconen</a>
+                <a href="Gemeenteniconen.html#illustraties">Illustraties</a>
+                <a href="Gemeenteniconen.html#credits">Credits</a>
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" type="button">
+                <span class="theme-toggle-light">☀️ Light</span>
+                <span class="theme-toggle-dark">🌙 Dark</span>
+            </button>
+        </div>
+    </header>
+
+<main class="iconenpagina paginabreedte">
+        <header class="iconen-intro">
+            <small class="bovenkop">De iconenset</small>
+            <h1>Bekijk en download iconen</h1>
+            <p>Kies een icoon om de stijlen te bekijken. Kopieer de SVG-code of download het bestand.</p>
+        </header>
+
+        <div id="icon-grid" class="icon-keuze-raster"></div>
+    </main>
+
+<dialog class="icon-dialog" id="icon-dialog">
+    <div class="icon-dialog-kop">
+        <h2 id="dialog-title"></h2>
+        <button class="dialog-sluiten" id="dialog-close" type="button" title="Sluiten">&times;</button>
+    </div>
+    <div class="variant-keuze" id="variant-keuze">
+        <button class="variant-knop is-active" type="button" data-variant="Line">Line</button>
+        <button class="variant-knop" type="button" data-variant="Fill">Fill</button>
+        <button class="variant-knop" type="button" data-variant="Regular">Regular</button>
+        <button class="variant-knop" type="button" data-variant="Regular diapositive">Diapositive</button>
+    </div>
+    <div class="icon-preview" id="icon-preview"></div>
+    <label class="svg-code-label" for="svg-code">SVG-code</label>
+    <textarea class="svg-code" id="svg-code" rows="6" readonly spellcheck="false"></textarea>
+    <p class="icon-feedback" id="icon-feedback"></p>
+    <div class="icon-acties">
+        <button class="knop" id="copy-svg" type="button">Kopieer SVG</button>
+        <a class="knop download-knop" id="download-svg" download>Download SVG</a>
+    </div>
+</dialog>
+
+<script src="scripts/script.js" defer></script>
+<script src="scripts/iconen.js" defer></script>
+</body>
+</html>
